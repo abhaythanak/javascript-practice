@@ -46,13 +46,22 @@
 
 //Do While Loops  ------------------------------------------
 
-let n = prompt("enter the value of n")
-n = Number.parseInt(n)
+//minimum one time execute
+// let n = prompt("enter the value of n")
+// n = Number.parseInt(n)
 
-let i = 10;
-do {
-    console.log(i)
-    i++;
-}while(i<n)
+// let i = 10;
+// do {
+//     console.log(i)
+//     i++;
+// }while(i<n)
+
+//   function in javascript    ----------------------
+
+const hello = (x,y,z) =>{
+    return console.log( Math.floor(x+(y + z) /2))
+}
+hello(1,25,50)
+
 
 
