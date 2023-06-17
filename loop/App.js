@@ -58,10 +58,23 @@
 
 //   function in javascript    ----------------------
 
-const hello = (x,y,z) =>{
-    return console.log( Math.floor(x+(y + z) /2))
-}
-hello(1,25,50)
+// const hello = (x,y,z) =>{
+//     return console.log( Math.floor(x+(y + z) /2))
+// }
+// hello(1,25,50)
 
+const array = ["a","b","c","d"]
+const array1 = ["x","y","z","c"]
+
+const CommonItems = (arr1,arr2)=>{
+    for(let i=0;i<arr1.length;i++){
+        for(let j=0;j<arr1.length;j++) {
+            if(arr1[i]===arr2[j]){
+                return true
+            }
+        }
+    }
+    return false
+}
 
 
