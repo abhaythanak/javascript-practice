@@ -1,0 +1,6 @@
+// toUpperCase   
+// toLowerCase
+// Slice
+
+
+
