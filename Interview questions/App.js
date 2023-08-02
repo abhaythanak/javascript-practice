@@ -115,6 +115,150 @@
 
 //20
 
- console.warn(Promise.resolve(5))
+  //console.warn(Promise.resolve(5))
 
  //21
+
+ //console.log('❤️' === '❤️');
+
+ //22
+
+ //JSON.parse();
+
+// Parses JSON to a JavaScript value
+
+//23
+//  let name ='Abhay';
+  
+//  function getName() {
+//     console.log(name);
+//     let name = 'Thanak';
+//  }
+//  getName();
+
+//24
+
+// let name ='Abhay';
+  
+// function getName() {
+//    console.log(name);
+// }
+// getName();
+
+//25
+
+//console.log(`${(x => x)('I love')} to program`)    //${} it's called template literal
+
+//26
+
+// function sumValues(x, y, z) {
+//     return x + y + z;
+// }
+//console.log(sumValues(1,2,3))
+//console.warn(sumValues(...[1, 2, 3]))
+// A: sumValues([...1, 2, 3])
+// B: sumValues([...[1, 2, 3]])
+// C: sumValues(...[1, 2, 3])  right Ans
+// D: sumValues([1, 2, 3])
+
+//27
+
+// const name = 'code step by step';
+// console.warn(!typeof name === 'object');
+// console.warn(!typeof name === 'string')
+// console.warn(!typeof name === false )
+
+//28
+
+// const name = "Subscribe";
+// const age = 21;
+
+// console.warn(isNaN(name))
+// console.warn(isNaN(age))
+
+//29
+
+// let person = { name: "Anil" };
+// // how can modify person object
+
+// Object.seal(person)
+// person.name='Abhay'
+// console.warn(person)
+
+//30
+
+// let data = [2, 9, 0, 10];
+// // remove first element
+// data.shift()
+
+// console.warn(data)
+
+//31
+
+// let data = [2, 9, 0, 10];
+// // remove last element
+// data.pop()
+// console.warn(data)
+
+//32
+//check any value is odd or even
+// let a = 30;
+// console.log(a%2)
+
+//33
+// let data = {name:"anil"}
+// delete data.name;
+// console.warn(data)
+
+//34
+
+// let data = "true";
+// //convert data to boolean false value
+// console.warn(!data)
+
+//34
+// let data = 'true';
+// // convert data to boolean true value
+// console.warn(data);
+
+//34
+//difference between map and forEach function 
+
+
+//35
+// let data = ["anil", "peter","bruce"];
+// delete data[2];
+// console.warn(data)
+
+//36
+// let data = ["anil", "peter","bruce"];
+// delete data[2];
+// console.warn(data.length)
+
+//37
+//merge two array
+// let a = [1,2,3,4];
+// let b = [4,56,7,8,9];
+
+// let c = [...a,...b]
+// console.log(c)  //c=[[1, 2, 3, 4, 4, 56, 7, 8, 9]]
+
+//38
+// let c = 3 ** 3;
+// console.warn(c) //(3)^3 = 27
+
+
+//39
+
+// let a=2;
+// setTimeout(()=>{
+//     console.warn(a)
+// },2000);
+// a=100;
+
+//40
+// let a=2;
+// let A=30;
+// console.warn(A)
+
+//41
