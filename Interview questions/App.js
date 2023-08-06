@@ -262,3 +262,88 @@
 // console.warn(A)
 
 //41
+// let A10= "like"
+// console.log(A10)
+// let 10A= "like"
+// console.log(10A)
+
+//42
+// let a = "like"
+// let b = `like`
+// console.log(a === b)
+
+//43
+// let a = 1
+// let c = 2
+// console.log(--c === a)    // --c means 1-c
+
+//44
+// let a = 1
+// let c = 2
+//let b = 1
+// console.log(a === b === --c)  false becus  a===b true ===--c
+//its boolean is === number its return false
+
+//45
+// console.log(3*3)
+// console.log(3**3)
+// console.log(3***3) its show error
+
+//46
+// console.log(a)
+// var a;
+
+//47
+// console.log(b)
+
+//48
+// console.log([[[[]]]])
+
+//49
+//os name
+//navigator.platform
+
+//50
+// for (var i =0; i<3; i++){
+//   setTimeout(()=> console.log(i),1)
+// }
+
+//51
+// for (let i =0; i<3; i++){
+//   setTimeout(()=> console.log(i),1)
+// }
+
+//52
+// console.log(+true)
+// console.log(typeof +true)
+
+//53
+// console.log(!"abhay")
+// console.log(typeof("abhay"))
+
+//54
+let data = "size";
+const bird = {
+  size: "small",
+};
+console.warn(bird[data])
+console.warn(bird["size"])
+console.warn(bird.size)
+console.warn(bird.data)
+
+//55
+//56
+//57
+//58
+//59
+//60
+//61
+//62
+//63
+//64
+//65
+//66
+//67
+//68
+//69
+//70

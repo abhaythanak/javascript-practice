@@ -114,9 +114,9 @@
 // //borrowed by Human 
 // StudentSheriyans.__proto__= Human
 
-// console.log(StudentSheriyans)
+// console.log(StudentSheriyans.__proto__);
 
-
+// console.log("hello");
 
 //==============================================================================
 
@@ -182,3 +182,60 @@
 //closures
 //==============================================================================
 
+
+// i) The numbers should be arranged on the basis 
+// of increasing order of count. 
+// ii) The numbers which have the same count in 
+// the collection should be sorted in decreasing order. 
+// Return the arranged collection
+// let Array = [-1,1,-6,4,5,-1,4,1, 1, 3]
+
+// // in increasing order
+// const IncreaseOrder = Object.entries(Array).sort((a, b) => a[1] - b[1]);
+// //in decreasing order
+// IncreaseOrder.sort((a, b) => b[1] - a[1]);
+
+
+
+// const Collection = [];
+// for (const [num, count] of IncreaseOrder) {
+//     Collection.push(...Array(count).fill(Number(num)));
+//   }
+//   //const ArrangeCollection = Collection()
+// console.log(Collection)
+
+// A collection of characters is given in form of a string and a size L is given. Task is to find longest substring of this string length such that we get at most L unique characters in the substring. Return the length of the longest substring Example:
+// Input :
+// s = "eceba", L = 2
+// Output : 3
+// Explanation: The substring is "ece" with length 3.
+
+
+// A child is given a collection of numbers like this [-1,1,-6,4,5,-1,4,1, 1, 3]. The collection can have duplicate numbers also. The child has to arrange the numbers in this particular way:- i) The numbers should be arranged on the basis of increasing order of count. ii) The numbers which have the same count in the collection should be sorted in decreasing order. Return the arranged collection
+// Example:
+// Input : [-1,1,-6,4,5,5,-1,4,1, 1, 3] Output : [3,-6,5,5, 4,4,-1,-1, 1,1]
+
+
+
+function longLength(s, L) {
+    let left = 0, maxLen = 0, charFrequency = {};
+  
+    for (let right = 0; right < s.length; right++) {
+      charFrequency[s[right]] = (charFrequency[s[right]] || 0) + 1;
+  
+      while (Object.keys(charFrequency).length > L) {
+        charFrequency[s[left]]--;
+        if (charFrequency[s[left]] === 0) delete charFrequency[s[left]];
+        left++;
+      }
+  
+      maxLen = Math.max(maxLen, right - left + 1);
+    }
+  
+    return maxLen;
+  }
+  let s = "eceba"
+  let L = 2
+  const Output = longLength(s,L)
+
+  console.log(Output)
