@@ -129,9 +129,9 @@
 
 // abcd.call(obj,1,2,3)
 
-//call
+// call
 
-//Apply
+// Apply
 // function abcd(val1,val2,val3){
 //     console.log(this)
 //  }
