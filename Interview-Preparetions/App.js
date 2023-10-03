@@ -6,17 +6,19 @@
 //    })(2)
 //  })(1)
 
-function evaluate(op){
-    return function(a){
-        return function(b){
-            if(op === 'sum') return a+b;
-            else if(op === "mul") return a * b;
-            else if(op === 'dev') return a / b;
-            else if(op === 'sub') return a - b;
-        }
-    }
-}
-console.log(evaluate("sum")(30)(10))
+//Currying
+
+// function evaluate(op){
+//     return function(a){
+//         return function(b){
+//             if(op === 'sum') return a+b;
+//             else if(op === "mul") return a * b;
+//             else if(op === 'dev') return a / b;
+//             else if(op === 'sub') return a - b;
+//         }
+//     }
+// }
+// console.log(evaluate("sum")(30)(10))
 // function Scope
 // for (var i = 0; i < 5; i++){
 //     setTimeout(function(){
@@ -130,62 +132,79 @@ console.log(evaluate("sum")(30)(10))
 // abcd()
 
 //call
-function abcd(val1,val2,val3){
-    console.log(this)
- }
-var obj = { age: 24 }
+// function abcd(val1,val2,val3){
+//     console.log(this)
+//  }
+// var obj = { age: 24 }
 
-abcd.call(obj,1,2,3)
-
-
-
-//Apply
-function abcd(val1,val2,val3){
-    console.log(this)
- }
-var obj = { age: 24 }
-
-abcd.apply(obj,[1,2,3])
+// abcd.call(obj,1,2,3)
 
 
-//bind
- function abcd(){
-    console.log(this)
- }
-var obj = { age: 24 }
 
-var bimdfun = abcd.bind(obj)
-bimdfun();
+// //Apply
+// function abcd(val1,val2,val3){
+//     console.log(this)
+//  }
+// var obj = { age: 24 }
 
-//  custom Map ,Filter and Reduce
+// abcd.apply(obj,[1,2,3])
 
-//Polyfill for map
-  Array.prototype.AbhayMap= function(cb){
-    let temp = [];
-    for (let i = 0; i < this.length; i++) {
-        temp.push(cb(this[i], i, this))
+
+// //bind
+//  function abcd(){
+//     console.log(this)
+//  }
+// var obj = { age: 24 }
+
+// var bimdfun = abcd.bind(obj)
+// bimdfun();
+
+// //  custom Map ,Filter and Reduce
+
+// //Polyfill for map
+//   Array.prototype.AbhayMap= function(cb){
+//     let temp = [];
+//     for (let i = 0; i < this.length; i++) {
+//         temp.push(cb(this[i], i, this))
         
-    }
-    return temp;
-  }
+//     }
+//     return temp;
+//   }
 
-  //Polyfill for filter
-  Array.prototype.AbhayFilter= function(cb){
-    let temp = [];
-    for (let i = 0; i < this.length; i++) {
-        if(cb(this[i],i,this)) temp.push(this[i])
+//   //Polyfill for filter
+//   Array.prototype.AbhayFilter= function(cb){
+//     let temp = [];
+//     for (let i = 0; i < this.length; i++) {
+//         if(cb(this[i],i,this)) temp.push(this[i])
         
-    }
-    return temp;
-  } 
+//     }
+//     return temp;
+//   } 
 
 
-  //Polyfill for reduce
-  Array.prototype.AbhayReduce= function(cb,initialValue){
-    let accumulator = initialValue;
-    for (let i = 0; i < this.length; i++) {
-        accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i]
+//   //Polyfill for reduce
+//   Array.prototype.AbhayReduce= function(cb,initialValue){
+//     let accumulator = initialValue;
+//     for (let i = 0; i < this.length; i++) {
+//         accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i]
         
-    }
-    return temp;
-  }
+//     }
+//     return accumulator;
+//   }
+
+let arr = [4, 8, 6, 7, 32, 2];
+
+// Simple array sorting without using sort()
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i+1; j < arr.length; j++) {
+//         if (arr[i] > arr[j]) {
+//             // Swap the elements if they are in the wrong order
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
+// }
+
+// // 'arr' is now sorted in ascending order
+// console.log(arr); // Output: [2, 4, 6, 7, 8, 32]
