@@ -19,9 +19,24 @@
 // Input : "anagram" === nagaram
 // Input : "rat" === car
 
-const isAnagaram = (s, t)=>{
- s = s.toLowerCase().split("").sort().join("")
- t = t.toLowerCase().split("").sort().join("")
- return s === t;
+// const isAnagaram = (s, t)=>{
+//  s = s.toLowerCase().split("").sort().join("")
+//  t = t.toLowerCase().split("").sort().join("")
+//  return s === t;
+// }
+//  console.log(isAnagaram("Anagram", "nAgaram"))
+
+//4)  two sum
+// ex. (1,5,8,9,8,7)  two nums its addition is 6 which no. is that?
+
+const sum = (num, target)=>{
+    for (let i = 0; i < num.length; i++) {
+        for (let j = i+1; j < num.length; j++) {
+            if(num[i]+num[j] === target)
+            return [i,j]
+            
+        }
+        
+    }
 }
- console.log(isAnagaram("Anagram", "nAgaram"))
+console.log(sum([1,5,8,9,8,7], 6))
