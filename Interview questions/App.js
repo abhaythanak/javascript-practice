@@ -40,7 +40,7 @@
 //7
 
 // const set = new Set([1,1,2,3,4])   //Set remove duplicate character
-// console.warn(set)
+// console.log(set)
 
 //8
 
