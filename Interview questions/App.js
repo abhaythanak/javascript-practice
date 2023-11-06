@@ -322,14 +322,14 @@
 // console.log(typeof("abhay"))
 
 //54
-let data = "size";
-const bird = {
-  size: "small",
-};
-console.warn(bird[data])
-console.warn(bird["size"])
-console.warn(bird.size)
-console.warn(bird.data)
+// let data = "size";
+// const bird = {
+//   size: "small",
+// };
+// console.warn(bird[data])
+// console.warn(bird["size"])
+// console.warn(bird.size)
+// console.warn(bird.data)
 
 //55
 //56

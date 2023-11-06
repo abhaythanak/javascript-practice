@@ -137,7 +137,8 @@
 //  }
 // var obj = { age: 24 }
 
-// abcd.call(obj,1,2,3)
+//  abcd.call(obj,1,2,3)
+// console.log(abcd.call(obj,1,2,3));
 
 
 
