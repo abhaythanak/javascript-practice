@@ -9,6 +9,15 @@ function Fib (n,rlt={}){
 
 console.log(Fib(70))
 
+function Fib1(n){
+    if (n<=2) return 1;
+    return Fib1(n-1)+ Fib1(n-2)
+}
+
+console.log(Fib1(5))
+
+
+
 function Fib(n) {
     if (n <= 2) return 1;
 
